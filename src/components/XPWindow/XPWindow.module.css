@@ -1,0 +1,61 @@
+
+.window {
+  width: 420px;
+  border: 2px solid #0054e3;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 2px 2px 0 #fff inset, -2px -2px 0 #888 inset;
+  background: #ece9d8;
+  overflow: hidden;
+}
+
+.titlebar {
+  background: linear-gradient(to right, #0054e3, #2a8fff);
+  padding: 4px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleLeft {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon {
+  font-size: 14px;
+}
+
+.title {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.controls {
+  display: flex;
+  gap: 2px;
+}
+
+.btn {
+  width: 18px;
+  height: 16px;
+  font-size: 10px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: #c0c0c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.close {
+  background: #d94040;
+  color: white;
+}
+
+.body {
+  padding: 20px;
+}
