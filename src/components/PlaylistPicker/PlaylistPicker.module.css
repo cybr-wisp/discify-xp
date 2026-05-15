@@ -1,0 +1,79 @@
+
+.desktop {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.listBox {
+  width: 260px;
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px inset #888;
+  background: white;
+}
+
+.hint {
+  font-size: 12px;
+  font-family: 'Tahoma', sans-serif;
+  color: #666;
+  padding: 10px;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Tahoma', sans-serif;
+  border-bottom: 1px solid #eee;
+}
+
+.item:hover { background: #e8f0ff; }
+
+.active {
+  background: #0054e3;
+  color: white;
+}
+
+.itemIcon { font-size: 14px; }
+.itemName { flex: 1; }
+.itemCount { color: #888; font-size: 11px; }
+.active .itemCount { color: #ccc; }
+
+.tracklist {
+  width: 340px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.trackRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 8px;
+  border-bottom: 1px solid #eee;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.trackRow:hover { background: #e8f0ff; }
+
+.trackNum {
+  font-size: 11px;
+  color: #888;
+  width: 18px;
+  text-align: right;
+}
+
+.trackInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.trackName { font-size: 12px; color: #000; }
+.trackArtist { font-size: 10px; color: #666; }
+.trackDur { font-size: 11px; color: #888; }

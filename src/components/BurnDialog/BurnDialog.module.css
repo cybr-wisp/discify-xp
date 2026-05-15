@@ -1,0 +1,52 @@
+
+.container {
+  min-width: 300px;
+  padding: 10px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px 20px;
+}
+
+.cdIcon {
+  font-size: 32px;
+}
+
+.question {
+  font-size: 13px;
+  font-family: 'Tahoma', sans-serif;
+  color: #000;
+}
+
+.divider {
+  border-top: 1px solid #aca899;
+  margin-bottom: 12px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  min-width: 75px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-family: 'Tahoma', sans-serif;
+  background: #ece9d8;
+  border: 2px outset #fff;
+  cursor: pointer;
+}
+
+.btn:active {
+  border-style: inset;
+}
+
+.yes {
+  border-color: #0054e3;
+  border-width: 2px;
+}

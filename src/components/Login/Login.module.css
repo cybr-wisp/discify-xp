@@ -1,11 +1,10 @@
-
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
   padding: 10px 0;
+  min-width: 320px;
 }
 
 .disc {
@@ -32,27 +31,40 @@
   text-align: center;
 }
 
+.inputRow {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-family: 'Tahoma', sans-serif;
+  border: 2px inset #888;
+  background: white;
+  box-sizing: border-box;
+}
+
 .loginBtn {
-  margin-top: 8px;
-  background: #1db954;
+  margin-top: 4px;
+  background: #0054e3;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
+  border: 2px outset #4488ff;
+  padding: 6px 24px;
   font-size: 13px;
   font-family: 'Tahoma', sans-serif;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
   font-weight: bold;
 }
 
-.loginBtn:hover {
-  background: #1aa34a;
+.loginBtn:hover { background: #0040cc; }
+.loginBtn:active { border-style: inset; }
+
+.hint {
+  font-size: 11px;
+  color: #666;
+  font-family: 'Tahoma', sans-serif;
 }
 
-.spotifyLogo {
-  height: 16px;
-  filter: brightness(0) invert(1);
-}
+.hint a { color: #0054e3; }

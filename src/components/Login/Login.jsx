@@ -1,10 +1,12 @@
-
+import { useState } from 'react'
 import XPWindow from '../XPWindow/XPWindow'
 import styles from './Login.module.css'
 
-function Login() {
-  function handleLogin() {
-    alert('Spotify login coming Day 4!')
+function Login({ onLogin }) {
+  const [username, setUsername] = useState('')
+
+  function handleSubmit() {
+    if (username.trim()) onLogin(username.trim())
   }
 
   return (
@@ -12,18 +14,20 @@ function Login() {
       <div className={styles.container}>
         <div className={styles.disc}>💿</div>
         <h1 className={styles.heading}>Discify</h1>
-        <p className={styles.sub}>Turn your Spotify playlists into mix CDs</p>
-        <button
-          className={styles.loginBtn}
-          onClick={handleLogin}
-        >
-          <img
-            src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png"
-            alt="Spotify"
-            className={styles.spotifyLogo}
+        <p className={styles.sub}>Turn your favourite songs into a mix CD</p>
+        <div className={styles.inputRow}>
+          <input
+            className={styles.input}
+            placeholder="Enter your Last.fm username"
+            value={username}
+            onChange={e => setUsername(e.target.value)}
+            onKeyDown={e => e.key === 'Enter' && handleSubmit()}
           />
-          Login with Spotify
+        </div>
+        <button className={styles.loginBtn} onClick={handleSubmit}>
+          Let's Go →
         </button>
+        <p className={styles.hint}>Don't have one? <a href="https://last.fm/join" target="_blank" rel="noreferrer">Sign up free</a></p>
       </div>
     </XPWindow>
   )
